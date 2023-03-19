@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+
+      class="d-flex"
+            style="padding: 5px; width: 500px"
+            name="cars"
+            id="cars"
+
+                  <div id="search-form">
+         
+
+          <select
+          
+          >
+            <option value="PL">Premier League</option>
+            <option value="BL1">Bundesliga</option>
+            <option value="DED">Eredivisie</option>
+            <option value="PD">la liga</option>
+            <option value="SA">Serie A</option>
+          </select>
+        </div>
+   -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Header-->
+    <div id="header" class="bg-primary" style="height: 15rem">
+      <div id="header-background" style="width: 100%; height: 100%">
+        <div id="search-form"></div>
+
+        <div id="search-form">
+          <label for="Leagues">Choose a League:</label>
+          <div class="select-wrapper">
+            <select name="LeaguesName" id="LeaguesName">
+              <option value="PL">Premier League</option>
+              <option value="BL1">Bundesliga</option>
+              <option value="DED">Eredivisie</option>
+              <option value="PD">la liga</option>
+              <option value="SA">Serie A</option>
+            </select>
+            <button class="sporty-button" id="sporty-button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header-->
+
+    <!-- League Name-->
+
+    <div id="spinner" class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div class="d-flex justify-content-center" id="title-league">
+      <h1 id="Title_Name">Premier League</h1>
+    </div>
+    <!--End Header-->
+
+    <!-- MAIN CONTENT-->
+    <div class="container" style="margin-top: 50px">
+      <!--STANDINGS-->
+      <div class="p-5 mt-1">
+        <!--TITLE ROW-->
+        <div class="row">
+          <h2><b>STANDINGS</b></h2>
+          <hr />
+        </div>
+        <!-- END TITLE ROW-->
+
+        <!--STANDINGS ROW-->
+        <div class="row" id="standings">
+          <table class="table caption-top">
+            <caption>
+              Season 2022/2023
+            </caption>
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">MP</th>
+                <th scope="col">W</th>
+                <th scope="col">D</th>
+                <th scope="col">L</th>
+                <th scope="col">GF</th>
+                <th scope="col">GA</th>
+                <th scope="col">Pts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>5</td>
+                <td>23</td>
+                <td>60</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>Mark</td>
+                <td>5</td>
+                <td>23</td>
+                <td>60</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>Mark</td>
+                <td>5</td>
+                <td>23</td>
+                <td>60</td>
+                <td>23</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- END STANDINGS ROW-->
+      </div>
+      <!-- END STANDINGS-->
+    </div>
+    <!--End MAIN CONTENT-->
+
+    <script src="./script.mjs"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+  </body>
+</html>
